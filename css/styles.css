@@ -22,5 +22,8 @@
 .items li {
   font-size: 12px;
   font-style: italic; }
+.items .item__type {
+  text-transform: uppercase;
+  font-style: italic; }
 
 /*# sourceMappingURL=styles.css.map */
