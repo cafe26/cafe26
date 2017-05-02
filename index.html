@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Cafe 26</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/scripts.js">
+
+    </script>
   </head>
 
   <body>
@@ -20,7 +24,7 @@
     </div>
 
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav">
         <a href="#">Menu</a>
         <a href="#">Hours & Location</a>
         <a href="#">About</a>
@@ -32,88 +36,139 @@
         <div class="col m6">
           <h2>Morning til Noon</h2>
           <div class="row">
-            <div class="items col s6">
+            <h6>Staples</h6>
+            <div class="item">
               <p>Bacon</p>
-              <ul>Biscuits and Gravy
+              <p>$1/slice</p>
+            </div>
+            <div class="item">
+              <ul>Biscuits & Gravy
                 <li>Toasted biscuits slathered with sausage gravy</li>
               </ul>
-              <p>Scrambled Eggs</p>
-              <p>Country Fried Potatoes</p>
+              <p>$2</p>
             </div>
-            <div class="prices col s6">
-              <p>$1/slice</p>
+            <div class="item">
+              <p>Scrambled Eggs</p>
               <p>$2</p>
-              <br>
-              <p>$2</p>
+            </div>
+            <div class="item">
+              <p>Country Fried Potatoes</p>
               <p>$2</p>
             </div>
           </div>
+
           <div class="row">
-            <div class="items col s6">
+            <div class="item">
               <p class="item__type">Drinks</p>
-              <p>Coffee</p>
-              <p>Lemonade</p>
-              <p>Iced Tea</p>
-            </div>
-            <div class="prices col s6">
               <p>$3</p>
             </div>
+            <div class="item">
+              <p>Coffee</p>
+            </div>
+            <div class="item">
+              <p>Lemonade</p>
+            </div>
+            <div class="item">
+              <p>Iced Tea</p>
+            </div>
+          </div>
+          <div class="image__horizonal">
+            <img src="https://cdn.pixabay.com/photo/2016/10/03/20/20/corn-on-the-cob-1712739_1280.jpg" alt="">
           </div>
         </div>
+
         <div class="col m6">
           <h2>Noon til Morning</h2>
           <div class="row">
-            <div class="items col s6">
-              <p class="item__type">Vegetables</p>
+            <h6>Vegetables</h6>
+            <div class="item">
               <p>Artichoke</p>
-              <p>Corn on the Cob</p>
-            </div>
-            <div class="prices col s6">
               <p>$6</p>
+            </div>
+            <div class="item">
+              <p>Corn on the Cob</p>
               <p>$3</p>
             </div>
           </div>
           <div class="row">
-            <div class="items col s6">
-              <p class="item__type">Saandwiches</p>
+            <div class="item">
+              <ul><span class="item__type item__description">Sandwiches</span>
+                <li class="item__description">All sandwiches are served on a hoagie-style bun with marinara sauce and grilled onions and green bell peppers</li>
+              </ul>
+              <p>$8</p>
+            </div>
+            <div class="item">
               <p>Meatball</p>
+            </div>
+            <div class="item">
               <p>Steak & Cheese</p>
             </div>
-            <div class="prices col s6">
-              <p>$8</p>
+            <div class="item">
+              <p>Italian Sausage</p>
             </div>
           </div>
           <div class="row">
-            <div class="items col s6">
-              <p class="item__type">Other</p>
-              <p>Spaghetti</p>
-              <ul>
-                <li>Vegetarian</li>
-                <li>With Meatballs</li>
+            <div class="item">
+              <ul><span class="item__type">Spaghetti</span>
+                <li class="item__description">a heaping pile of classic spaghetti served with marinara sauce and a slice of garlic bread</li>
               </ul>
             </div>
-            <div class="prices col s6">
+            <div class="item">
+              <p>Vegetarian</p>
               <p>$5</p>
+            </div>
+            <div class="item">
+              <p>With Meatballs</p>
               <p>$7</p>
             </div>
           </div>
           <div class="row">
-            <div class="items col s6">
+            <div class="item">
               <p class="item__type">Drinks</p>
-              <p>Iced Tea</p>
-              <p>Lemonade</p>
-              <p>Ruby Nectar</p>
-            </div>
-            <div class="prices col s6">
               <p>$3</p>
             </div>
+            <div class="item">
+              <p>Ruby Nectar</p>
+            </div>
+            <div class="item">
+              <p>Lemonade</p>
+            </div>
+            <div class="item">
+              <p>Iced Tea</p>
+            </div>
           </div>
+        </div>
+
+
 
         </div>
       </div>
     </div>
 
-
+    <div class="container about">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="image__vertical">
+            <!-- img as bakground -->
+          </div>
+        </div>
+        <div class="col s12 m8">
+          <div class="row">
+            <h2>Hours</h2>
+            <p>Thursday noon till we run out of food on Sunday during the second weekend of July.</p>
+          </div>
+          <div class="row">
+            <h2>Location</h2>
+            <p>Booth 320 at the Oregin Country Fair in Veneta, Oregon.</p>
+            <p>We are located across from Main Stage, on Main Street.</p>
+          </div>
+          <div class="Contact">
+            <h2>Contact</h2>
+            <p>gracielundell@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
