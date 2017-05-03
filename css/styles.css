@@ -142,7 +142,6 @@ nav {
     background-size: cover; }
     @media (max-width: 400px) {
       #about .m6 .image__vertical {
-        border: 1px solid red;
         height: 50vh; } }
 
 /*# sourceMappingURL=styles.css.map */
