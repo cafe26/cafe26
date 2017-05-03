@@ -95,19 +95,6 @@ h6,
   margin-bottom: 10px;
 }
 
-img {
-  width: 500px;
-  height: 300px;
-  position: relative;
-  left: -100px;
-}
-
-.image__vertical {
-  background: url("../imgs/artichokes.jpg");
-  width: 100%;
-  height: 700px;
-}
-
 #menu {
   padding-top: 100px;
   .menu__wrap {
@@ -118,14 +105,40 @@ img {
         margin-bottom: 0;
       }
     }
+    img {
+      width: 100%;
+      height: 30vh;
+      position: relative;
+      left: -100px;
+    }
   }
 }
 
 #hours {
-  padding-top: 100px;
+  padding-top: 120px;
   .m8 {
     .row:first-of-type {
       padding-top: 80px;
+    }
+  }
+  .m4 {
+    .image__vertical {
+      background: url("../imgs/artichokes.jpg");
+      width: 100%;
+      height: 700px;
+    }
+  }
+}
+
+#about {
+  padding-top: 80px;
+  .m6 {
+    .image__vertical {
+      background: url("../imgs/booth2.jpg");
+      width: 100%;
+      height: 700px;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
