@@ -1,5 +1,23 @@
+h1 {
+  font-family: 'Cormorant Unicase', serif;
+}
+
 h2 {
   font-size: 40px;
+  font-family: 'Cormorant Unicase', serif;
+  text-transform: uppercase;
+}
+
+p,
+ul {
+  font-family: 'Arsenal', sans-serif;
+  letter-spacing: 1px;
+}
+
+.landing {
+  p {
+    padding-left: 75px;
+  }
 }
 
 .parallax-container {
@@ -23,8 +41,9 @@ h2 {
 }
 
 .nav {
-  background-color: #eee;
   height: 20vh;
+  background-color: white;
+  transition: height .3s, background-color .5s;
   a {
     color: black;
   }
@@ -35,6 +54,7 @@ h2 {
   top: 0;
   width: 100%;
   height: 10vh;
+  background: #73683B;
 }
 
 .nav,
