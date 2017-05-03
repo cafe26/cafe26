@@ -3,11 +3,14 @@ $(document).ready(function() {
         var distanceFromTop = $(document).scrollTop();
         if (distanceFromTop >= $('.parallax-container').height())
         {
-            $('.nav').addClass('fixed');
+            $('.main-nav').addClass('fixed');
         }
         else
         {
-            $('.nav').removeClass('fixed');
+            $('.main-nav').removeClass('fixed');
         }
+    });
+    $('.scrollspy').scrollSpy({
+      scrollOffset: 0
     });
 });
