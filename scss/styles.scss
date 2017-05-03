@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 h1 {
   font-family: 'Cormorant Unicase', serif;
 }
@@ -13,6 +20,14 @@ ul {
   font-family: 'Arsenal', sans-serif;
   letter-spacing: 1px;
   font-size: 16px;
+}
+
+h6,
+.item__type {
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .parallax-container {
@@ -37,6 +52,10 @@ ul {
   }
 }
 
+nav {
+  box-shadow: 0;
+  width: 100%;
+}
 .main-nav {
   height: 20vh;
   background-color: white;
@@ -56,7 +75,6 @@ ul {
   height: 10vh;
   background: #73683B;
   .active {
-    // border-bottom: 3px solid white;
     color: white;
   }
 }
@@ -71,13 +89,12 @@ ul {
 
 .row {
   margin-bottom: 40px;
-  padding-left: 10px;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: 300px;
   p,
   ul {
     margin: 5px;
@@ -89,14 +106,6 @@ ul {
     font-size: 12px;
     font-style: italic;
   }
-}
-
-h6,
-.item__type {
-  font-size: 20px;
-  font-style: italic;
-  text-transform: uppercase;
-  margin-bottom: 0;
 }
 
 .item__description {
@@ -114,6 +123,9 @@ h6,
       }
     }
     img {
+      @media (max-width:400px) {
+        display: none;
+      }
       width: 100%;
       height: 30vh;
       position: relative;
