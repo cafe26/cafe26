@@ -64,6 +64,9 @@ nav {
     color: black;
   }
   .active {
+    @media (max-width: 400px) {
+      border-bottom: none;
+    }
     border-bottom: 3px solid white;
   }
 }
@@ -122,14 +125,17 @@ nav {
         margin-bottom: 0;
       }
     }
-    img {
-      @media (max-width:400px) {
-        display: none;
-      }
-      width: 100%;
-      height: 30vh;
-      position: relative;
-      left: -100px;
+  }
+  .image__horizonal {
+    background: url("../imgs/corn.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    left: -80px;
+    @media (max-width: 400px) {
+      display: none;
     }
   }
 }
@@ -139,13 +145,19 @@ nav {
   .m8 {
     .row:first-of-type {
       padding-top: 80px;
+      @media (max-width: 400px) {
+        padding-top: 20px;
+      }
     }
   }
   .m4 {
     .image__vertical {
       background: url("../imgs/artichokes.jpg");
       width: 100%;
-      height: 700px;
+      height: 70vh;
+      @media (max-width: 400px) {
+        height: 50vh;
+      }
     }
   }
 }
@@ -159,6 +171,10 @@ nav {
       height: 700px;
       background-repeat: no-repeat;
       background-size: cover;
+      @media (max-width: 400px) {
+        border: 1px solid red;
+        height: 50vh;
+      }
     }
   }
 }

@@ -54,6 +54,9 @@ nav {
     color: black; }
   .main-nav .active {
     border-bottom: 3px solid white; }
+    @media (max-width: 400px) {
+      .main-nav .active {
+        border-bottom: none; } }
 
 .main-nav.fixed {
   display: block;
@@ -99,23 +102,32 @@ nav {
     margin-bottom: 0; }
     #menu .menu__wrap .col:last-of-type .row:last-of-type {
       margin-bottom: 0; }
-    #menu .menu__wrap img {
-      width: 100%;
-      height: 30vh;
-      position: relative;
-      left: -100px; }
-      @media (max-width: 400px) {
-        #menu .menu__wrap img {
-          display: none; } }
+  #menu .image__horizonal {
+    background: url("../imgs/corn.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    left: -80px; }
+    @media (max-width: 400px) {
+      #menu .image__horizonal {
+        display: none; } }
 
 #hours {
   padding-top: 120px; }
   #hours .m8 .row:first-of-type {
     padding-top: 80px; }
+    @media (max-width: 400px) {
+      #hours .m8 .row:first-of-type {
+        padding-top: 20px; } }
   #hours .m4 .image__vertical {
     background: url("../imgs/artichokes.jpg");
     width: 100%;
-    height: 700px; }
+    height: 70vh; }
+    @media (max-width: 400px) {
+      #hours .m4 .image__vertical {
+        height: 50vh; } }
 
 #about {
   padding-top: 80px; }
@@ -125,5 +137,9 @@ nav {
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover; }
+    @media (max-width: 400px) {
+      #about .m6 .image__vertical {
+        border: 1px solid red;
+        height: 50vh; } }
 
 /*# sourceMappingURL=styles.css.map */
