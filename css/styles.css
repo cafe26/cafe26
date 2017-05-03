@@ -9,7 +9,8 @@ h2 {
 p,
 ul {
   font-family: 'Arsenal', sans-serif;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 16px; }
 
 .parallax-container {
   height: 80vh;
@@ -34,6 +35,8 @@ ul {
   transition: height .3s, background-color .5s; }
   .main-nav a {
     color: black; }
+  .main-nav .active {
+    border-bottom: 3px solid white; }
 
 .main-nav.fixed {
   display: block;
@@ -42,6 +45,8 @@ ul {
   width: 100%;
   height: 10vh;
   background: #73683B; }
+  .main-nav.fixed .active {
+    color: white; }
 
 .main-nav,
 .main-nav.fixed {
