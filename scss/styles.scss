@@ -172,8 +172,8 @@ nav {
       background: url("../imgs/booth2.JPG");
       width: 100%;
       height: 700px;
-      background-repeat: no-repeat;
       background-size: cover;
+      border: 1px solid red;
       @media (max-width: 400px) {
         height: 50vh;
       }
